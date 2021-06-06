@@ -4,13 +4,181 @@
 	    <meta charset="utf-8">
 	    {% load static %}
 		<link href="{% static 'alexwebsite/homepage.css' %}" rel="stylesheet" type="text/css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<title> Alex Hung </title>
 	</head>
 
 	<body>
-		<div class="big-heading">
-			Alex Hung's homepage
+		<div class='framebox'>
+			<div class="fixed-heading">
+				<div class="big-heading">
+					Alex Hung
+				</div>
+				<div id="navbar" class="navigation">
+					<ul>
+						<li id="about"><a href="#section1">About</a></li>
+						<li id="education"><a href="#section2">Education</a></a></li>
+						<li id="experiences"><a href="#section3">Experiences</a></a></li>
+						<li id="publications"><a href="#section4">Publications</a></a></li>
+					</ul>
+				</div>
+			</div>
+				
+			<div class="main-content">
+				<div id="section1" class="sections" style="margin-top: 100px;"> 
+					<p class="subtitle">About</p>
+					
+					<div class="intro-left">
+						<img id="myphoto"src="https://i.imgur.com/7hwF9yN_d.webp?maxwidth=760&fidelity=grand" alt="Longtail boat in Thailand" width="200px">
+					</div>
+					<div class="intro-right">
+						<p class="intro">Hi, I am Alex Hung (孔令宇), a ph.D. student in the Computer Science department at 
+							UCLA working in <a href="https://mrrl.ucla.edu/sunglab/">Sung Lab</a> where I am fortunate 
+							to be advised by <a href="http://kyungs.bol.ucla.edu/Site/Home.html">Prof. Kyung Hyun Sung</a> 
+							and <a href="http://web.cs.ucla.edu/~dt/">Prof. Demetri Terzopoulos</a>. Prior to joining UCLA, 
+							I was working in <a href="https://www.ri.cmu.edu/robotics-groups/biomedical-image-guidance/">Biomedical Image Guidance Lab</a>
+							at CMU as a Master student under prof. <a href="https://www.ri.cmu.edu/ri-faculty/john-galeotti/">John Galeotti</a>. 
+							Before graduate study, I received my Bachelor’s degree in Biomedical Engineering from Peking University 
+							where I worked with <a href="https://en.coe.pku.edu.cn/faculty/facultyaz/891205.htm">Prof. Tianyu Xie</a> and also minored in Computer Science. 
+							In my undergraduate years, I also briefly worked in <a href="http://picsl.upenn.edu/">Penn Image Computing and Science Lab</a> 
+							under the supervision of <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p2693923">Prof. Paul Yushkevich</a>.
+						</p>
+						<p class="intro">
+							My main research interest is to apply computer vision and machine learning approaches to medical image analysis. 
+							In particular, I am interested in developing computer vision algorithms that help downstream algorithms or clinicians with diagnosis or surgeries, 
+							as well as incorporation other clinical information into vision-based methods.
+						</p>
+					</div>
+					
+				</div>
+	
+				<div id="section2" class="sections"> 
+					<p class="subtitle">Education</p>
+					<div class="container">
+
+						<div class="rightbox">
+						  <div class="rb-container">
+							<ul class="rb">
+							  <li class="rb-item" ng-repeat="itembx">
+								<div class="timestamp">
+									August 2019-present:   Research Assistant, Biomedical Image Guidance Lab (Carnegie Mellon University) , Pittsburgh, USA
+								</div>
+								<div class="item-title">
+									•	Accomplished probabilistic reverberation artifact segmentation on ultrasound images under weak and semi supervision with a new probabilistic segmentation network, hierarchical probabilistic U-Net and a physics-based artifact refinement algorithm (submitted to ICRA 2021)
+								</div>
+								<div class="item-title">
+									•	Created a directed graph-based algorithm to model per-pixel confidence of ultrasound images, which allowed better compounding, shadow detection, and helped robotic ultrasound systems find the optimal direction to move the probe (accepted at ISBI 2021)
+								</div>
+								
+					  
+
+							  <li class="rb-item" ng-repeat="itembx">
+								<div class="timestamp">
+									May 2020-August 2020:   Research Intern, Philips Respironics, Pittsburgh, USA
+								</div>
+								<div class="item-title">
+									•	Developed 3D facial reconstruction algorithm where the inputs were selfies and outputs were the 3D faces
+								<div class="item-title">
+									•	Built models that predict the vest sizes for patients given their body measurements such as heights and weights
+								</div>
+							  </li>
+					  
+							  <li class="rb-item" ng-repeat="itembx">
+								<div class="timestamp">
+									December 2016-June 2019:   Research Assistant, Tianyu Xie’s Lab (Peking University), Beijing, China
+								</div>
+								<div class="item-title">
+									•	Created a stereo matching algorithm based on feature detection and energy minimization 
+								<div class="item-title">
+									•	Designed 3D endoscopic cameras based on epipolar geometry with the limitation of space on endoscopes and reconstructed the 3D scene
+								</div>
+							  </li>
+
+							  <li class="rb-item" ng-repeat="itembx">
+								<div class="timestamp">
+									July 2018-September 2018:   Research Intern, Penn Image Computing & Science Laboratory (University of Pennsylvania), Philadelphia, USA
+								</div>
+								<div class="item-title">
+									•	Worked on a 10-week research project to detect and segment neurofibrillary tangles in whole histology slides 
+								<div class="item-title">
+									•	Completed the detection of tangles using color channel alteration and SE-ResNet based neural network, and reached an accuracy of 97.21%, a sensitivity of 97.40%, a specificity of 97.07%
+								</div>
+							  </li>
+
+							</ul>
+						  </div>
+						</div>
+					  </div>
+				</div>
+	
+				<div id="section3" class="sections"> 
+					<p class="subtitle">Experiences</p>
+					<div class="intro-left">
+						<img id="myphoto"src="https://media.geeksforgeeks.org/wp-content/uploads/20190808143838/logsm.png" alt="Longtail boat in Thailand">
+					</div>
+					<div class="intro-right">
+						<p class="intro">Hi, I am Alex Hung (孔令宇), a ph.D. student in the Computer Science department at 
+							UCLA working in <a href="https://mrrl.ucla.edu/sunglab/">Sung Lab</a> where I am fortunate 
+							to be advised by <a href="http://kyungs.bol.ucla.edu/Site/Home.html">Prof. Kyung Hyun Sung</a> 
+							and <a href="http://web.cs.ucla.edu/~dt/">Prof. Demetri Terzopoulos</a>. Prior to joining UCLA, 
+							I was working in <a href="https://www.ri.cmu.edu/robotics-groups/biomedical-image-guidance/">Biomedical Image Guidance Lab</a>
+							at CMU as a Master student under prof. <a href="https://www.ri.cmu.edu/ri-faculty/john-galeotti/">John Galeotti</a>. 
+							Before graduate study, I received my Bachelor’s degree in Biomedical Engineering from Peking University 
+							where I worked with <a href="https://en.coe.pku.edu.cn/faculty/facultyaz/891205.htm">Prof. Tianyu Xie</a> and also minored in Computer Science. 
+							In my undergraduate years, I also briefly worked in <a href="http://picsl.upenn.edu/">Penn Image Computing and Science Lab</a> 
+							under the supervision of <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p2693923">Prof. Paul Yushkevich</a>.
+						</p>
+						<p class="intro">
+							My main research interest is to apply computer vision and machine learning approaches to medical image analysis. 
+							In particular, I am interested in developing computer vision algorithms that help downstream algorithms or clinicians with diagnosis or surgeries, 
+							as well as incorporation other clinical information into vision-based methods.
+						</p>
+					</div>
+				</div>
+	
+				<div id="section4" class="sections"> 
+					<p class="subtitle">Publications</p>
+					<div class="intro-left">
+						<img id="myphoto"src="https://media.geeksforgeeks.org/wp-content/uploads/20190808143838/logsm.png" alt="Longtail boat in Thailand">
+					</div>
+					<div class="intro-right">
+						<p class="intro">Hi, I am Alex Hung (孔令宇), a ph.D. student in the Computer Science department at 
+							UCLA working in <a href="https://mrrl.ucla.edu/sunglab/">Sung Lab</a> where I am fortunate 
+							to be advised by <a href="http://kyungs.bol.ucla.edu/Site/Home.html">Prof. Kyung Hyun Sung</a> 
+							and <a href="http://web.cs.ucla.edu/~dt/">Prof. Demetri Terzopoulos</a>. Prior to joining UCLA, 
+							I was working in <a href="https://www.ri.cmu.edu/robotics-groups/biomedical-image-guidance/">Biomedical Image Guidance Lab</a>
+							at CMU as a Master student under prof. <a href="https://www.ri.cmu.edu/ri-faculty/john-galeotti/">John Galeotti</a>. 
+							Before graduate study, I received my Bachelor’s degree in Biomedical Engineering from Peking University 
+							where I worked with <a href="https://en.coe.pku.edu.cn/faculty/facultyaz/891205.htm">Prof. Tianyu Xie</a> and also minored in Computer Science. 
+							In my undergraduate years, I also briefly worked in <a href="http://picsl.upenn.edu/">Penn Image Computing and Science Lab</a> 
+							under the supervision of <a href="https://www.med.upenn.edu/apps/faculty/index.php/g275/p2693923">Prof. Paul Yushkevich</a>.
+						</p>
+						<p class="intro">
+							My main research interest is to apply computer vision and machine learning approaches to medical image analysis. 
+							In particular, I am interested in developing computer vision algorithms that help downstream algorithms or clinicians with diagnosis or surgeries, 
+							as well as incorporation other clinical information into vision-based methods.
+						</p>
+					</div>
+				</div>
+
+			</div>
+			
 		</div>
+	
+		<script>
+			$(document).ready(function(){
+			  // Add smooth scrolling to all links
+			  $("#navbar a").on('click', function(event) {
+				//   alert("changing")
+
+				event.preventDefault();
+				var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
+				var customoffset = 150
+				$('html, body').animate({scrollTop:target_offset - customoffset}, 0);
+			  });
+				
+			});
+		</script>
 
 	</body>
 </html>
