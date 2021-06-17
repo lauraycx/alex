@@ -12,7 +12,21 @@
 		<div class='framebox'>
 			<div class="fixed-heading">
 				<div class="big-heading">
-					Alex Hung
+					<span>Alex Hung</span>
+					<div class="profile-links">
+						<div class="with-right-margin">
+							<img src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="github link" width="35px">
+							<a>aL3x-O-o-Hung</a>
+						</div>
+						<div class="with-right-margin">
+							<img class="with-top-padding" src="https://scholar.google.com/intl/en/scholar/images/2x/scholar_logo_64dp.png" alt="google scholar link" height="20px">
+							<a class="with-top-padding">Alex Ling Yu Hung</a>
+						</div>
+						<div>
+							<img src="https://graffica.info/wp-content/uploads/2020/10/antiguo-logo-de-gmail.jpg" alt="github link" height="35px">
+							<a>lingyuh@andrew.cmu.edu</a>
+						</div>
+					</div>
 				</div>
 				<div id="navbar" class="navigation">
 					<ul>
@@ -26,11 +40,11 @@
 			</div>
 				
 			<div class="main-content">
-				<div id="section1" class="sections" style="margin-top: 100px;"> 
+				<div id="section1" class="sections" style="margin-top: 160px;"> 
 					<p class="subtitle">About</p>
 					
 					<div class="intro-left">
-						<img id="myphoto"src="https://i.imgur.com/7hwF9yN_d.webp?maxwidth=760&fidelity=grand" alt="Longtail boat in Thailand" width="200px">
+						<img id="myphoto"src="https://i.imgur.com/7hwF9yN_d.webp?maxwidth=760&fidelity=grand" alt="profile photo" width="200px">
 					</div>
 					<div class="intro-right">
 						<p class="intro">Hi, I am Alex Hung (孔令宇), a ph.D. student in the Computer Science department at 
@@ -199,9 +213,9 @@
 					<div class="container">
 
 						<div class="pub-item">
-							<li>
+							<ul><li>
 							Ultrasound Confidence Maps Of Intensity And Structure Based On Directed Acyclic Graphs And Artifact Models (ISBI 2021)
-							</li>
+							</li></ul>
 							<span class="authors">
 								<span class="name-to-bold">Alex Ling Yu Hung</span>, Wanwen Chen, John Galeotti
 							</span>
@@ -213,9 +227,10 @@
 						</div>
 
 						<div class="pub-item">
-							<li>
-							Weakly-and Semi-Supervised Probabilistic Segmentation and Quantification of Ultrasound Needle-Reverberation Artifacts to Allow Better AI Understanding of Tissue Beneath Needles (under revision at TBME)
-							</li>
+							<ul><li>
+									Weakly-and Semi-Supervised Probabilistic Segmentation and Quantification of Ultrasound Needle-Reverberation Artifacts to Allow Better AI Understanding of Tissue Beneath Needles (under revision at TBME)
+							</li></ul>
+							
 							<span class="authors">
 								<span class="name-to-bold">Alex Ling Yu Hung</span>, Edward Chen, John Galeotti
 							</span>
@@ -226,9 +241,9 @@
 						</div>
 
 						<div class="pub-item">
-							<li>
+							<ul><li>
 							Good and Bad Boundaries in Ultrasound Compounding: Preserving Anatomic Boundaries While Suppressing Artifacts (CARS 2021, under revision at IJCARS)
-							</li>
+							</li></ul>
 							<span class="authors">
 								<span class="name-to-bold">Alex Ling Yu Hung</span>, John Galeotti
 							</span>
@@ -241,9 +256,9 @@
 						</div>
 
 						<div class="pub-item">
-							<li>
+							<ul><li>
 							3D Mapping of Neurofibrillary Tangle Burden in the Human Medial Temporal Lobe (under revision at BRAIN)
-							</li>
+							</li></ul>
 							<span class="authors">
 								Paul A Yushkevich, Mónica Muñoz López, Maria Mercedes Iñiguez de Onzoño Martin, Ranjit Ittyerah, Sydney Lim, Sadhana Ravikumar, Madigan L Bedard, Stephen Pickup, Weixia Liu, Jiancong Wang, <span class="name-to-bold">Ling Yu Hung</span>, ...
 							</span>
@@ -253,9 +268,12 @@
 							</div>
 						</div>
 						<div class="pub-item">
-							<li>
-							3D Mapping of TAU Neurofibrillary Tangle Burden in the Human Medial Temporal Lobe (ISBI 2020)
-							</li>
+							<ul>
+								<li>
+									3D Mapping of TAU Neurofibrillary Tangle Burden in the Human Medial Temporal Lobe (ISBI 2020)
+								</li>
+							</ul>
+							
 							<span class="authors">
 								Paul A Yushkevich, Maria Mercedes Iñiguez de Onzoño Martin, Ranjit Ittyerah, Sydney Lim, Madigan Lavery, Jiancong Wang, <span class="name-to-bold">Ling Yu Hung</span>, ...
 							</span>
@@ -263,7 +281,7 @@
 								<a href="https://ieeexplore.ieee.org/abstract/document/9098462">Paper</a>
 
 							</div>
-						</div>
+						</div>	
 
 
 
@@ -279,7 +297,7 @@
 
 				event.preventDefault();
 				var target_offset = $(this.hash).offset() ? $(this.hash).offset().top : 0;
-				var customoffset = 150
+				var customoffset = 230
 				$('html, body').animate({scrollTop:target_offset - customoffset}, 0);
 			  });
 				

@@ -23,21 +23,50 @@ body {
     padding-top: 50px;
     margin-bottom: 40px;
     background-color: white;
-    z-index:1
+    z-index:1;
 }
 
 
 .big-heading {
-    font-size: xx-large;
-    font-weight: bold;
     text-align: center;
-    /* padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 40px;
-    padding-bottom: 20px; */
-    border-bottom: 2px solid;
+    padding-bottom: 10px; 
+    border-bottom: 1.5px solid;
     border-color: darkgray;
     width: 1000px;
+}
+
+.big-heading span{
+    font-size: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    display: block;
+    padding-bottom: 20px; 
+}
+
+.profile-links {
+    display: inline-flex;
+}
+
+.profile-links .with-right-margin {
+    margin-right: 70px;
+    display:inline-block;
+}
+
+.profile-links .with-top-padding{
+    padding-top: 10px;
+}
+
+.profile-links img {
+    display:inline-block;
+    vertical-align:middle
+}
+
+.profile-links a {
+    display:inline-block;
+    vertical-align:middle;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 13px;
+    letter-spacing: -1px;
 }
 
 .navigation{
@@ -54,10 +83,11 @@ body {
     text-decoration: none;
     font-size: 17px;
     margin: auto;
+    transition: 0.3s;
 }
 
 .navigation a:hover {
-    background-color:rgba(238, 232, 232, 0.6);
+    background-color: lightgrey;
     color: black;
 }
 
@@ -128,7 +158,7 @@ body {
 .section1 {
     height: 300px;
     display: inline-block;
-    margin-top: 100px;
+    margin-top: 160px;
 }
 
 .section2 {
@@ -219,16 +249,29 @@ line-height: 1.5;
 }
 
 .pub-links{
-margin-left: 17px;
+margin-left: 7px;
+}
+
+.pub-links a {
+transition: 0.3s;
+padding: 5px;
+color: #3EBE90;
+/* text-decoration: none; */
+}
+
+.pub-links a:hover {
+background-color: #3EBE90;
+color: white;
 }
 
 .authors{
-margin-left: 23px;
+margin-left: 13px;
+display:inline-block;
 }
 
 .pub-item {
 line-height: 1.5;
-margin-bottom: 15px;
+margin-bottom: 40px;
 }
 
 .pub-item a {
@@ -237,6 +280,13 @@ margin: 5px;
 
 .pub-item li {
 font-weight: bold;
+font-size: 18px;
+}
+
+.pub-item ul {
+    list-style-position: outside;
+    padding-left: 13px;
+    margin: 0;
 }
 
 .name-to-bold {
